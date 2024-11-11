@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+.sarcasm-popup {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sarcasm-popup-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sarcasm-popup-icon {
+  font-size: 24px;
+}
+
+.sarcasm-popup-fade-out {
+  opacity: 0;
+}

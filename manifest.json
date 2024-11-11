@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Sarcasm Detector",
+    "version": "1.1",
+    "description": "Detect sarcasm in selected text",
+    "permissions": ["contextMenus", "tabs", "https://sarcasmai.com/*"],
+    "host_permissions": ["https://sarcasmai.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["popup.css"]
+      }
+    ],
+    "icons": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  }
+  
